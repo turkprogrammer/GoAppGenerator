@@ -14,10 +14,13 @@ func main() {
 	// Получаем название проекта от пользователя
 	fmt.Print("Enter your project name: ")
 	var projectName string
-	fmt.Scanln(&projectName)
+	_, err := fmt.Scanln(&projectName)
+	if err != nil {
+		return
+	}
 
 	// Создаем директорию для проекта
-	err := os.Mkdir(projectName, 0755)
+	err = os.Mkdir(projectName, 0755)
 	if err != nil {
 		fmt.Println("Error creating project directory:", err)
 		return
