@@ -29,13 +29,13 @@ To install and set up the GoAppGenerator, follow these steps:
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/GoAppGenerator.git
+    git clone https://github.com/turkprogrammer/GoAppGenerator.git
     cd GoAppGenerator
     ```
 
 2. Build the generator:
     ```sh
-    go build -o goappgenerator main.go
+    go build -o generator main.go
     ```
 
 ## Usage
@@ -43,7 +43,7 @@ To install and set up the GoAppGenerator, follow these steps:
 To generate a new Go web application scaffold, run the generator and follow the prompts:
 
 ```sh
-./goappgenerator
+./generator
 ```
 
 ## Project Structure
